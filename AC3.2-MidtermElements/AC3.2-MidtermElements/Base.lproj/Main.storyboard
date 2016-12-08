@@ -27,14 +27,14 @@
                                             <frame key="frameInset" minX="15" minY="-2" width="42" height="29"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="22"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aIe-q4-Zaq">
                                             <frame key="frameInset" minX="15" minY="27" width="36" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="15"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -68,17 +68,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypp-Ce-vEx">
-                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8NE-qs-ne4"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N06-IM-sEa">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="HJ3-Na-dwO"/>
+                                    <constraint firstAttribute="width" constant="82" id="Pli-oi-3ws"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Favorite!">
+                                    <color key="titleColor" red="0.99835759400000001" green="0.5219424681" blue="0.01307340188" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="favoritesButton:" destination="lZN-Ty-UpX" eventType="touchUpInside" id="7i1-0J-XTB"/>
                                 </connections>
@@ -86,15 +88,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Gc0-fy-ROg" firstAttribute="top" secondItem="N06-IM-sEa" secondAttribute="bottom" constant="565" id="3mp-OL-2R8"/>
-                            <constraint firstItem="N06-IM-sEa" firstAttribute="top" secondItem="x50-8V-VHb" secondAttribute="bottom" constant="8" symbolic="YES" id="BQm-Yu-Nhz"/>
-                            <constraint firstItem="N06-IM-sEa" firstAttribute="top" secondItem="ypp-Ce-vEx" secondAttribute="top" id="BXm-lS-v0B"/>
-                            <constraint firstItem="8NE-qs-ne4" firstAttribute="centerY" secondItem="mz5-NZ-Mcd" secondAttribute="centerY" id="DMj-hM-wPa"/>
-                            <constraint firstItem="N06-IM-sEa" firstAttribute="leading" secondItem="mz5-NZ-Mcd" secondAttribute="leadingMargin" id="eaT-nG-E0V"/>
-                            <constraint firstItem="Gc0-fy-ROg" firstAttribute="top" secondItem="8NE-qs-ne4" secondAttribute="bottom" constant="214" id="gvK-LM-FUW"/>
-                            <constraint firstItem="ypp-Ce-vEx" firstAttribute="centerX" secondItem="8NE-qs-ne4" secondAttribute="centerX" id="nAZ-px-Y0v"/>
-                            <constraint firstItem="8NE-qs-ne4" firstAttribute="leading" secondItem="mz5-NZ-Mcd" secondAttribute="leadingMargin" constant="51" id="srP-Ai-7Zv"/>
-                            <constraint firstItem="ypp-Ce-vEx" firstAttribute="centerX" secondItem="mz5-NZ-Mcd" secondAttribute="centerX" id="wsq-th-c71"/>
+                            <constraint firstItem="8NE-qs-ne4" firstAttribute="centerY" secondItem="mz5-NZ-Mcd" secondAttribute="centerY" id="A9O-Wg-qRy"/>
+                            <constraint firstItem="N06-IM-sEa" firstAttribute="top" secondItem="ypp-Ce-vEx" secondAttribute="top" id="Brt-42-DhZ"/>
+                            <constraint firstItem="Gc0-fy-ROg" firstAttribute="top" secondItem="N06-IM-sEa" secondAttribute="bottom" constant="565" id="JWV-WO-pzc"/>
+                            <constraint firstItem="8NE-qs-ne4" firstAttribute="leading" secondItem="mz5-NZ-Mcd" secondAttribute="leadingMargin" constant="51" id="P18-kN-Ou7"/>
+                            <constraint firstItem="Gc0-fy-ROg" firstAttribute="top" secondItem="8NE-qs-ne4" secondAttribute="bottom" constant="214" id="QNm-AB-ccT"/>
+                            <constraint firstItem="ypp-Ce-vEx" firstAttribute="centerX" secondItem="mz5-NZ-Mcd" secondAttribute="centerX" id="X90-I0-GEj"/>
+                            <constraint firstItem="N06-IM-sEa" firstAttribute="leading" secondItem="mz5-NZ-Mcd" secondAttribute="leadingMargin" id="YkO-EO-KPO"/>
+                            <constraint firstItem="ypp-Ce-vEx" firstAttribute="centerX" secondItem="8NE-qs-ne4" secondAttribute="centerX" id="caz-yA-XrW"/>
+                            <constraint firstItem="N06-IM-sEa" firstAttribute="top" secondItem="x50-8V-VHb" secondAttribute="bottom" constant="8" symbolic="YES" id="hbB-KX-TO6"/>
                         </constraints>
                     </view>
                     <connections>

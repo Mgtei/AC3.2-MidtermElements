@@ -38,6 +38,7 @@ class ElementsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "elementCell", for: indexPath)
         let anElementThing = elementsArray[indexPath.row]
+        cell.backgroundColor = UIColor.darkGray
         cell.textLabel?.text = anElementThing.name
         cell.detailTextLabel?.text = ("\(anElementThing.symbol)(\(anElementThing.number)) \(anElementThing.weight)")
         APIRequestManager.manager.getData(endPoint: anElementThing.thumbnailImage) { (data: Data?) in
