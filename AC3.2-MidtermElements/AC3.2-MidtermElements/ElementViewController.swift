@@ -25,7 +25,7 @@ class ElementViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = catchTheElements.name
-        elementLabel.text = "Symbol: \(catchTheElements.symbol)\nNumber: \(catchTheElements.number)\nWeight: \(catchTheElements.weight)\nBoiling Point: \(catchTheElements.boilingPoint) degrees Celsius\nMelting Point: \(catchTheElements.meltingPoint) degrees Celsius"
+        elementLabel.text = "Symbol: \(catchTheElements.symbol)\nNumber: \(catchTheElements.number)\nAtomic Weight: \(catchTheElements.weight)\nBoiling Point: \(catchTheElements.boilingPoint) degrees Celsius\nMelting Point: \(catchTheElements.meltingPoint) degrees Celsius"
         
         
         
