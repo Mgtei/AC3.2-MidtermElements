@@ -33,7 +33,7 @@ class Element {
             
             self.init(name: name, symbol: symbol, number: number, weight: weight, meltingPoint: meltingPoint, boilingPoint: boilingPoint)
         }
-        else {
+        else    {
             return nil
         }
     }
