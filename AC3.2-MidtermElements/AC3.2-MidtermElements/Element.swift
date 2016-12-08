@@ -31,7 +31,7 @@ class Element {
             let meltingPoint = dict["melting_c"] as? Int,
             let boilingPoint = dict["boiling_c"] as? Int {
             
-            self.init(name: name, number: number, weight: weight, meltingPoint: meltingPoint, boilingPoint: boilingPoint)
+            self.init(name: name, symbol: symbol, number: number, weight: weight, meltingPoint: meltingPoint, boilingPoint: boilingPoint)
         }
         else {
             return nil

@@ -35,15 +35,13 @@ class ElementsTableViewController: UITableViewController {
         return elementsArray.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "elementCell", for: indexPath)
+        let anElementThing = elementsArray[indexPath.row]
+        cell.textLabel?.text = anElementThing.name
+        cell.detailTextLabel?.text = anElementThing.name
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
