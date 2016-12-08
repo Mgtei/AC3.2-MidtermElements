@@ -65,8 +65,22 @@
                     <view key="view" contentMode="scaleToFill" id="mz5-NZ-Mcd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypp-Ce-vEx">
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ypp-Ce-vEx" firstAttribute="top" secondItem="x50-8V-VHb" secondAttribute="bottom" constant="8" symbolic="YES" id="HGd-Du-o0R"/>
+                            <constraint firstItem="ypp-Ce-vEx" firstAttribute="centerX" secondItem="mz5-NZ-Mcd" secondAttribute="centerX" id="lv9-cf-PrR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="elementLabel" destination="ypp-Ce-vEx" id="1pG-SW-0OF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s0L-Se-JQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

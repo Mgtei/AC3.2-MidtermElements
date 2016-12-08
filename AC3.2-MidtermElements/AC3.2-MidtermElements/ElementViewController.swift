@@ -10,9 +10,10 @@ import UIKit
 
 class ElementViewController: UIViewController {
     var catchTheElements: Element!
+    @IBOutlet weak var elementLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = catchTheElements.name
-        
+        elementLabel.text = "Symbol: \(catchTheElements.symbol)\nNumber: \(catchTheElements.number)\nWeight: \(catchTheElements.weight)\nBoiling Point: \(catchTheElements.boilingPoint)\nMelting Point: \(catchTheElements.meltingPoint)"
     }
 }
