@@ -39,7 +39,14 @@ class ElementsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "elementCell", for: indexPath)
         let anElementThing = elementsArray[indexPath.row]
         cell.textLabel?.text = anElementThing.name
-        cell.detailTextLabel?.text = anElementThing.name
+        cell.detailTextLabel?.text = ("\(anElementThing.symbol)(\(anElementThing.number)) \(anElementThing.weight)")
+        APIRequestManager.manager.getData(endPoint: anElementThing.thumbnailImage) { (data: Data?) in
+            guard let validData = data else { return }
+            DispatchQueue.main.async {
+                cell.imageView?.image = UIImage(data: validData)
+                cell.setNeedsLayout()
+            }
+        }
         return cell
     }
     
